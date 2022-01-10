@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Interest Calculator</title>
+    </head>
+     <body>
+        <div class="maindiv">
+        <h1>Simple Interest Calculator</h1>
+        <form id="form1" onsubmit="return checkdata()">
+        <!-- Deposit amount-->
+        Amount <input type="number" id="principal" >
+        <br>
+        <br>
+        <!-- Interest rate -->
+        Rate <input onchange="updateRate()" type="range"  id="rate" min="1" max="20" step="0.25" value="10.25">
+        <span id="rate_val">
+            10.25%
+        </span>
+        <br>
+        <br>
+        <!--Amount of years till return-->
+        No. of Years <select id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <br>
+        <br/>
+        <!-- Total return-->
+        Interest: <span id="int"></span>
+        <br>
+        <br>
+        <button onclick="compute()">Compute Interest</button>
+        <br>
+        <br>
+        <!-- Total return with explanation of every input-->
+        <span id="result" ></span>
+        </form>
+        </div>
+        <footer>
+            &#169; This Calculator belongs to <strong>Me</strong>
+        </footer>
+    </body>
+</html>
