@@ -8,8 +8,6 @@
      <body>
         <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
-        <form id="form1" onsubmit="return checkdata()">
-        <!-- Deposit amount-->
         Amount <input type="number" id="principal" >
         <br>
         <br>
@@ -34,17 +32,12 @@
             <option value="10">10</option>
         </select>
         <br>
-        <br/>
-        <!-- Total return-->
-        Interest: <span id="int"></span>
-        <br>
         <br>
         <button onclick="compute()">Compute Interest</button>
         <br>
         <br>
         <!-- Total return with explanation of every input-->
         <span id="result" ></span>
-        </form>
         </div>
         <footer>
             &#169; This Calculator belongs to <strong>Me</strong>
